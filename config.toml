@@ -92,14 +92,14 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "Aliquam"
-      subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic01.jpg"
+      title = "Me"
+      subtitle = "Discover more about me"
+      image = "about_me_bg.jpeg"
       url = "blogs/aliquam"
 
     [[params.tiles.showcase]]
       title = "Resume"
-      subtitle = "Feugiat Amet Tempus"
+      subtitle = "Learn more about my professional journey"
       image = "resume.jpg"
       url = "blogs/tempus"
 
