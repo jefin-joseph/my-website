@@ -103,11 +103,11 @@ disqusShortname = ""
       image = "resume.jpg"
       url = "blogs/tempus"
 
-    [[params.tiles.showcase]]
-      title = "Renewables Project"
-      subtitle = "Analysis of Renewable Energy Production"
-      image = "renewable_energy.jpg"
-      url = "blogs/magna"
+    # [[params.tiles.showcase]]
+    #  title = "Renewables Project"
+    #  subtitle = "Analysis of Renewable Energy Production"
+    #  image = "renewable_energy.jpg"
+    #  url = "blogs/magna"
 
     [[params.tiles.showcase]]
       title = "Ipsum"
