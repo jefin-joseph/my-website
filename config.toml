@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://jefin-joseph-portfolio.netlify.app/"
 languageCode = "en-us"
-title = "Forty"
+title = "Jefin's Portfolio"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
@@ -19,8 +19,8 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "Your name"
-  description = "Your description"
+  name = "Portfolio - Jefin Joseph"
+  description = "Portfolio website featuring data science projects by Jefin Joseph"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -33,12 +33,12 @@ disqusShortname = ""
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
-    text = "Please visit [this page](/)"
+    text = "Please email: jefinjoseph.uk@gmail.com"
 
   # Navigation Section
   [params.navigation]
-    title = "Forty"
-    subtitle = "By HTML5 Up"
+    title = "Portfolio"
+    subtitle = "By Jefin"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -81,9 +81,9 @@ disqusShortname = ""
   [params.banner]
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
-    title = "Hi, my name is Forty"
-    subtitle = "A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP\nAND RELEASED UNDER THE CREATIVE COMMONS."
-    buttonText = "Get Started"
+    title = "Hi, my name is Jefin Joseph."
+    subtitle = "This website features some of the interesting data projects I've done in R"
+    buttonText = "Take a peek"
 
 
   # Tiles Section
