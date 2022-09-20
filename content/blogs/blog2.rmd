@@ -1,14 +1,14 @@
 ---
 title: "Climate Change Analysis"
-description: "Understanding the Impact of Climate Change"
-slug: "magna"
+description: Understanding the Impact of Climate Change
+date: "2017-10-31T22:26:09-05:00"
 image: climate_change.jpg
-keywords: ""
-categories: 
-    - ""
-    - ""
-date: 2017-10-31T22:26:09-05:00
-draft: false
+keywords: ''
+categories:
+- ''
+- ''
+slug: magna
+draft: no
 ---
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
