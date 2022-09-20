@@ -103,23 +103,23 @@ disqusShortname = ""
       image = "resume.jpg"
       url = "blogs/tempus"
 
-    # [[params.tiles.showcase]]
-    #  title = "Renewables Project"
-    #  subtitle = "Analysis of Renewable Energy Production"
-    #  image = "renewable_energy.jpg"
-    #  url = "blogs/magna"
+    [[params.tiles.showcase]]
+      title = "Climate Change Analysis"
+      subtitle = "Understanding the Impact of Climate Change"
+      image = "climate_change.jpg"
+      url = "blogs/magna"
 
     [[params.tiles.showcase]]
-      title = "Ipsum"
-      subtitle = "Nisl Sed Aliquam"
-      image = "pic04.jpg"
+      title = "Renewable Energy Production Analysis"
+      subtitle = "Understanding Renewable Energy Production vs CO2 Per Capita Emissions"
+      image = "renewable_energy.jpg"
       url = "blogs/ipsum"
 
-    [[params.tiles.showcase]]
-      title = "Consequat"
-      subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic05.jpg"
-      url = "blogs/consequat"
+    # [[params.tiles.showcase]]
+    #  title = "Consequat"
+    #  subtitle = "Ipsum Dolor Sit Amet"
+    #  image = "pic05.jpg"
+    #  url = "blogs/consequat"
 
     # [[params.tiles.showcase]]
     #  title = "Etiam"
