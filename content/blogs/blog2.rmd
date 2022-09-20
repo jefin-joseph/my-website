@@ -1,8 +1,8 @@
 ---
-title: "Analysis on Climate Change"
-description: "Understanding the impact of climate change"
+title: "Climate Change Analysis"
+description: "Understanding the Impact of Climate Change"
 slug: "magna"
-image: climate.jpg
+image: climate_change.jpg
 keywords: ""
 categories: 
     - ""
@@ -47,18 +47,18 @@ library(png)
 library(infer)
 ```
 
-If we wanted to study climate change, we can find data on the *Combined
+To study climate change, I used the data on the *Combined
 Land-Surface Air and Sea-Surface Water Temperature Anomalies* in the
-Northern Hemisphere at [NASA's Goddard Institute for Space
-Studies](https://data.giss.nasa.gov/gistemp). The [tabular data of
+Northern Hemisphere from [NASA's Goddard Institute for Space
+Studies](https://data.giss.nasa.gov/gistemp). 
+
+The [tabular data of
 temperature anomalies can be found
 here](https://data.giss.nasa.gov/gistemp/tabledata_v4/NH.Ts+dSST.txt)
 
-To define temperature anomalies you need to have a reference, or base,
-period which NASA clearly states that it is the period between
-1951-1980.
+As a base period to define anomalies, I use the period between 1951-1980.
 
-Run the code below to load the file:
+Let's load the file:
 
 ```{r weather_data, cache=TRUE}
 
@@ -78,6 +78,8 @@ You have two objectives in this section:
     `gather()` or `pivot_longer()` function. Name the new dataframe as
     `tidyweather`, name the variable containing the name of the month as
     `month`, and the temperature deviation values as `delta`.
+    
+I'm pivoting the weather data to long format for easier anlaysis. 
 
 ```{r tidyweather}
 tidyweather <- weather %>% 
@@ -85,26 +87,8 @@ tidyweather <- weather %>%
                pivot_longer(!Year, names_to = "Month", values_to = "delta")
 ```
 
-
-Inspect your dataframe. It should have three variables now, one each for
-
-1.  year,
-2.  month, and
-3.  delta, or temperature deviation.
-
-## Plotting Information
-
-Let us plot the data using a time-series scatter plot, and add a
-trendline. To do that, we first need to create a new variable called
-`date` in order to ensure that the `delta` values are plot
-chronologically.
-
-> In the following chunk of code, I used the `eval=FALSE` argument,
-> which does not run a chunk of code; I did so that you can knit the
-> document before tidying the data and creating a new dataframe
-> `tidyweather`. When you actually want to run this code and knit your
-> document, you must delete `eval=FALSE`, **not just here but in all
-> chunks were `eval=FALSE` appears.**
+Next, I'll the data using a time-series scatter plot, and add a
+trend line.
 
 ```{r scatter_plot}
 
@@ -133,10 +117,9 @@ The code below creates a new data frame called `comparison` that groups
 data in five time periods: 1881-1920, 1921-1950, 1951-1980, 1981-2010
 and 2011-present.
 
-We remove data before 1800 and before using `filter`. Then, we use the
+I remove the data before 1800 using `filter`. Then, I use the
 `mutate` function to create a new variable `interval` which contains
-information on which period each observation belongs to. We can assign
-the different periods using `case_when()`.
+information on which period each observation belongs to.
 
 ```{r intervals}
 
@@ -153,13 +136,7 @@ comparison <- tidyweather %>%
 
 ```
 
-Inspect the `comparison` dataframe by clicking on it in the
-`Environment` pane.
-
-Now that we have the `interval` variable, we can create a density plot
-to study the distribution of monthly deviations (`delta`), grouped by
-the different time periods we are interested in. Set `fill` to
-`interval` to group and colour the data by different time periods.
+I'll now create a density plot to study the distribution of monthly deviations (`delta`), grouped by the different time periods. 
 
 ```{r density_plot}
 library(viridis)
@@ -174,10 +151,7 @@ ggplot(comparison, aes(x = delta, fill = interval)) +
 
 ```
 
-So far, we have been working with monthly anomalies. However, we might
-be interested in average annual anomalies. We can do this by using
-`group_by()` and `summarise()`, followed by a scatter plot to display
-the result.
+Let's take a peek at average annual anomalies next:
 
 ```{r averaging}
 
