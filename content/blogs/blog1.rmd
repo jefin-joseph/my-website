@@ -1,14 +1,14 @@
 ---
-title: "Renewable Energy Production Analysis"
-description: "Understanding Renewable Energy Production vs CO2 Per Capita Emissions"
-slug: ipsum
+categories:
+- ""
+- ""
+date: "2017-10-31"
+description: Understanding Renewable Energy Production vs CO2 Per Capita Emissions
+draft: false
 image: renewable_energy.jpg
 keywords: ""
-categories: 
-    - ""
-    - ""
-date: 2017-10-31T21:28:43-05:00
-draft: false
+slug: ipsum
+title: Renewable Energy Production Analysis
 ---
 
 ```{r, setup, include=FALSE}
